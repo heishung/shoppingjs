@@ -1,0 +1,236 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="./index.css" />
+    <link
+      rel="stylesheet"
+      href="https://use.fontawesome.com/releases/v5.6.3/css/all.css"
+    />
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+  </head>
+  <body>
+    <header class="header">
+      <ul class="header-1">
+      <li>
+        <a class="logo" href="" title="">
+          <img
+            class="img-logo"
+            src="https://encrypted-tbn0.gstatic.com/images?q=tbn%3AANd9GcS_payDCu3StBXsJMPAn4qX-el2CatVFrKcITF8ZuRf_QQt5vlR&usqp=CAU"
+          />
+          <b class="icon-logo"></b>
+        </a>
+      </li>
+      <li class="search">
+  
+        <form method="GET">
+          <div>
+            <input
+              type="text"
+              name="search"
+              id="myInput"
+              onkeyup="myFunction()"
+              onfocusout="outClick()"
+              autocomplete="off"
+              placeholder="Nhập tên sản phẩm cần tìm ..."
+            />
+            <button class="icon-search" type="submit">
+              <i class="fa fa-search" aria-hidden="true"></i>
+            </button>
+            <div class="result-search"  style="display: none ;" id="up" >
+              <div class="result-search1">
+              <ul id="myUL">
+                <li><a href="./ip11.html">
+                  <p><img width ="40" height="40" src="https://images.fpt.shop/unsafe/fit-in/192x192/filters:quality(90):fill(white)/cdn.fptshop.com.vn/Uploads/Originals/2019/9/11/637037687757921048_11-pro-max-chung.png" alt=""></p>
+                  <div>
+                    <h4>Iphone 11 Pro </h4>
+                    <p>28.000.000₫</p>
+                  </div>
+                </a></li>
+                <li><a href="./ipxs.html">
+                  <p><img width ="40" height="40" src="https://images.fpt.shop/unsafe/fit-in/40x40/filters:quality(90):fill(white)/fptshop.com.vn/Uploads/Thumbs/2018/10/12/636749593270587915_iphoneXS-1o.png" alt=""></p>
+                  <div>
+                    <h4>Iphone XS</h4>
+                    <p>25.590.000₫</p>
+                  </div>
+                </a></li>
+                <li><a href="./ip11.html">
+                  <p><img width ="40" height="40" src="https://images.fpt.shop/unsafe/fit-in/192x192/filters:quality(90):fill(white)/cdn.fptshop.com.vn/Uploads/Originals/2019/5/30/636948128206495550_iphone-8-plus.png" alt=""></p>
+                  <div>
+                    <h4>Iphone 8 Plus </h4>
+                    <p>13.990.000₫</p>
+                  </div>
+                </a></li>
+                <li><a href="./ip11.html">
+                  <p><img width ="40" height="40" src="data:image/png;base64,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" alt=""></p>
+                  <div>
+                    <h4>Iphone 7 </h4>
+                    <p>7.490.000₫</p>
+                  </div>
+                </a></li>
+                <li><a href="./ip11.html">
+                  <p><img width ="40" height="40" src="https://images.fpt.shop/unsafe/fit-in/40x40/filters:quality(90):fill(white)/fptshop.com.vn/Uploads/Thumbs/2018/1/27/636526515750427366_1o-6splus-32.png" alt=""></p>
+                  <div>
+                    <h4>Iphone 6 Plus</h4>
+                    <p>7.490.000₫</p>
+                  </div>
+                </a></li>
+                <li><a href="./ip11.html">
+                  <p><img width ="40" height="40" src="https://images.fpt.shop/unsafe/fit-in/192x192/filters:quality(90):fill(white)/cdn.fptshop.com.vn/Uploads/Originals/2020/2/12/637170944168255808_ss-s20-plus-xanh-dd.png" alt=""></p>
+                  <div>
+                    <h4>Samsung S20+</h4>
+                    <p>22.990.000₫</p>
+                  </div>
+                </a></li>
+                <li><a href="./ip11.html">
+                  <p><img width ="40" height="40" src="https://images.fpt.shop/unsafe/fit-in/192x192/filters:quality(90):fill(white)/cdn.fptshop.com.vn/Uploads/Originals/2019/2/21/636863616938548520_ss-galaxy-s10-plus-daidien.png" alt=""></p>
+                  <div>
+                    <h4>Samsung S10+</h4>
+                    <p>13.990.000₫</p>
+                  </div>
+                </a></li>
+                <li><a href="./ip11.html">
+                  <p><img width ="40" height="40" src="https://images.fpt.shop/unsafe/fit-in/192x192/filters:quality(90):fill(white)/cdn.fptshop.com.vn/Uploads/Originals/2019/8/9/637009484555889036_SS-note-10-dd-1.png" alt=""></p>
+                  <div>
+                    <h4>Samsung Note 10</h4>
+                    <p>21.490.000₫</p>
+                  </div>
+                </a></li>
+                <li><a href="./ip11.html">
+                  <p><img width ="40" height="40" src="https://images.fpt.shop/unsafe/fit-in/465x465/filters:quality(90):fill(white)/cdn.fptshop.com.vn/Uploads/Originals/2020/6/2/637267175905809175_SaS-A21s-den-1.png" alt=""></p>
+                  <div>
+                    <h4>Samsung A21s</h4>
+                    <p>4.390.000₫</p>
+                  </div>
+                </a></li>
+                <li><a href="./mb.html">
+                  <p><img width ="40" height="40" src="https://images.fpt.shop/unsafe/fit-in/240x215/filters:quality(90):fill(white)/cdn.fptshop.com.vn/Uploads/Originals/2018/8/2/636688207026520043_mabookair-1o.png" alt=""></p>
+                  <div>
+                    <h4>Macbook Air 13 </h4>
+                    <p>28.000.000₫</p>
+                  </div>
+                </a></li>
+                <li><a href="./mb.html">
+                  <p><img width ="40" height="40" src="https://images.fpt.shop/unsafe/fit-in/240x215/filters:quality(90):fill(white)/cdn.fptshop.com.vn/Uploads/Originals/2020/4/11/637221970108265448_macbook-air-13-2020-silver-dd.png" alt=""></p>
+                  <div>
+                    <h4>Macbook Air 13 2020 </h4>
+                    <p>25.590.000₫</p>
+                  </div>
+                </a></li>
+                <li><a href="./mb.html">
+                  <p><img width ="40" height="40" src="https://images.fpt.shop/unsafe/fit-in/240x215/filters:quality(90):fill(white)/cdn.fptshop.com.vn/Uploads/Originals/2020/4/11/637221970108314570_macbook-air-13-2019-gold-dd.png" alt=""></p>
+                  <div>
+                    <h4>Macbook Air 11</h4>
+                    <p>21.499.000₫</p>
+                  </div>
+                </a></li>
+                <li><a href="./mb.html">
+                  <p><img width ="40" height="40" src="https://images.fpt.shop/unsafe/fit-in/240x215/filters:quality(90):fill(white)/cdn.fptshop.com.vn/Uploads/Originals/2019/5/31/636948957624237933_macbook-pro--touch-bar-2019-dd.png" alt=""></p>
+                  <div>
+                    <h4>Macbook Pro 13 </h4>
+                    <p>17.490.000₫</p>
+                  </div>
+                </a></li>
+              </ul>
+            </div>
+            </div>
+          </div>
+        </form>
+      </li>
+      <li class="hotline">
+          <span> Hotline : 19001994</span>     
+      </li>
+      <li>
+          <a class="gio" href="./giohang.html">
+            <i class="fa fa-shopping-cart" aria-hidden="true"></i>
+            Giỏ hàng
+            <div id="listGio"></div>
+          </a>
+      </li>
+    </header>
+
+    <div class="content">
+        <a class="icon1" href="dienthoai.html">
+          <i class="fa fa-mobile" aria-hidden="true"></i>
+          ĐIỆN THOẠI
+        </a>
+        <a class="icon1" href="./laptop.html">
+          <i class="fa fa-laptop" aria-hidden="true"></i>
+          LAPTOP
+        </a>
+    </div>
+ 
+<div class="warper">
+    <a href="#top" class="back-to-top">
+      <i class="fa fa-chevron-up" aria-hidden="true"></i>
+    </a>
+    <div id="carouselExampleIndicators" class="carousel slide" data-ride="carousel" >
+      <ol class="carousel-indicators">
+        <li data-target="#carouselExampleIndicators" data-slide-to="0" class="active"></li>
+        <li data-target="#carouselExampleIndicators" data-slide-to="1"></li>
+        <li data-target="#carouselExampleIndicators" data-slide-to="2"></li>
+      </ol>
+      <div class="carousel-inner">
+        <div class="carousel-item active">
+          <img  class="d-block w-100" src="https://cdn.tgdd.vn/2020/06/banner/800-170-800x170-34.png" alt="First slide">
+        </div>
+        <div class="carousel-item">
+          <img class="d-block w-100" src="https://cdn.tgdd.vn/2020/05/banner/800-170-800x170-73.png" alt="Second slide">
+        </div>
+        <div class="carousel-item">
+          <img class="d-block w-100" src="https://cdn.tgdd.vn/2020/06/banner/dt-docquyen-800-170-800x170.png" alt="Third slide">
+        </div>
+      </div>
+      <a class="carousel-control-prev" href="#carouselExampleIndicators" role="button" data-slide="prev">
+        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+        <span class="sr-only">Previous</span>
+      </a>
+      <a class="carousel-control-next" href="#carouselExampleIndicators" role="button" data-slide="next">
+        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+        <span class="sr-only">Next</span>
+      </a>
+    </div>
+  <div class="products">
+    <h3>  MOBILE </h3>
+    <div class="product" id="mobile">
+    </div>
+    
+    <h3>  LAPTOP</h3>
+    <div class="product" id="laptop">
+    </div>
+    </div>
+  </div>
+</div>
+
+<footer>
+  Copyright by @HungNgo 2020
+</footer>
+
+
+  </div>
+</div>
+</div>
+  <script src="./trangchu.js">
+  </script>
+  <script
+  src="https://code.jquery.com/jquery-3.2.1.slim.min.js"
+  integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN"
+  crossorigin="anonymous"
+></script>
+<script
+  src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"
+  integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q"
+  crossorigin="anonymous"
+></script>
+<script
+src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"
+integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl"
+crossorigin="anonymous"
+></script>
+
+</body>
+
+</html>
+

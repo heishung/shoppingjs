@@ -1,0 +1,272 @@
+*{
+    padding: 0px;
+    margin: 0px;
+    box-sizing: border-box;
+    font-size: 17px;
+    font-family: "Segoe UI",Roboto,"Helvetica Neue",Arial,sans-serif,"Apple Color Emoji","Segoe UI Emoji","Segoe UI Symbol";
+}
+body{
+    background-color: #dcdcdc;
+}
+.header{
+    width: 100%;
+    background-color: #EC3237;
+}
+.header-1{
+    max-width: 80%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: auto;
+    list-style: none;
+    color: white;
+}
+.header-1 a{
+    margin-left: auto;
+    color: #ffffff;
+}
+.header-1 li :hover{
+    color: #444eda;
+    cursor: pointer;
+}
+.img-logo{
+    width: 120px;
+    height: 90px;
+}
+
+.search form{
+    display: block;
+    width: 500px;
+    position: relative;
+}
+.search form input{
+    width: 500px;
+    height: 34px;
+    border: none;
+    font-size: 14px;
+    padding: 0 60px 0 10px;
+    background: #fff;
+    
+}
+
+.icon-search{
+    width: 50px;
+    height: 35px;
+    display: inline-block;
+    position: absolute;
+    top :-10;
+    right: 0;
+    background: rgba(7, 2, 1, 0.829);
+    color:white;
+    cursor: pointer;
+}
+.icon-search:hover{
+    background-color: black;
+}
+.result-search{
+    width: 100%;
+    display: block;
+    position: absolute;
+    z-index: 11;
+}
+.result-search1{
+    margin-right: 50px;
+    border-radius: 2px;
+    background-color: #fff;
+}
+.result-search ul{
+    list-style-type: none;
+    width: 100%;
+}
+.result-search ul li a{
+    display: table;
+    display: flex;
+    background-color: #fff;
+    padding: 10px 15px;
+    border-bottom: 1px solid #e8e8e8;
+    
+}
+.result-search ul li a div{
+    display: table-cell;
+    vertical-align: top;
+    padding-left: 50px;
+    font-size: 16px;
+}
+.result-search ul li a div h4{
+    font-size: 14px;
+    line-height: 1.29;
+    color: #505050;
+    margin-bottom: 6px;
+}
+.result-search ul li a div p{
+    font-size: 14px;
+    font-weight: bold;
+    color: #d0021b;
+    display: inline-block;
+    margin-right: 15px;
+}
+.back-to-top{
+    display: block;
+    position: fixed;
+    bottom: 5%;
+    right: 40px;
+    z-index: 9999;
+    width: 40px;
+    height: 40px;
+    text-align: center;
+    line-height: 30px;
+    background: #fff;
+    color: #e70d0d;
+    cursor: pointer;
+    border: 2px #393d3f solid;
+    border-radius: 99px;
+}
+.content{
+    display: flex;
+    justify-content: space-around;
+    margin-bottom: 20px;
+    background-color: rgba(10, 3, 1, 0.815);
+    height: 50px;
+    align-items: center;
+    font-family: -apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,"Helvetica Neue",Arial,sans-serif,"Apple Color Emoji","Segoe UI Emoji","Segoe UI Symbol"
+}
+.content :hover{
+    color: #444eda;
+    cursor: pointer;
+}
+
+.icon1{
+    color: rgb(255, 255, 255);
+}
+
+.f-warp{
+    max-width: 1200px;
+    width: 100%;
+    margin: auto;
+    position: relative;
+    background-color: white;
+    height: 100%;
+    border: 1px solid black;
+}
+.mb-head{
+    display: block;
+    list-style-type: none; 
+    text-decoration: none;
+    display: flex;
+    padding-bottom: 20px;
+}
+
+.mb-head li+li:before {
+    content: '/';
+    display: inline-block;
+    margin-left: 5px;
+    color: #898989;
+}
+.mb-title{
+    cursor: pointer;
+}
+.products{
+    flex-wrap: wrap;
+    text-align: center;
+    background-image: url("https://png.pngtree.com/png-clipart/20190515/original/pngtree-blue-technology-background-png-image_3722409.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 100%;
+}
+.products h3 {
+    font-size: 28px;
+    color: #ffffff;
+    padding-top: 20px;
+    padding-bottom: 20px;
+}
+.product{
+    margin-top: 20px;
+    width:100%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    transition: all .3s;
+
+}
+.product :hover{
+    transform: scale(1.005);
+    filter: blur(0rem) brightness(100%)
+}
+.product img{
+    margin-top: 10px;
+}
+.product>*{
+    flex-basis: 15%;
+    margin: 20px;
+}
+.mb-form{
+    width: 13%;
+    height: 32%;
+    background-color: rgb(255, 255, 255);
+    border: 1px solid rgb(236, 96, 96);
+    border-radius: 5px;
+    box-shadow: 1px 2px 2px rgb(236, 96, 96);
+    padding: 10px 0px;
+}
+.mb-form img{
+    height: 80%;
+    width: 60%;
+}
+.mb-form p{
+    font-size: 18px;
+}
+a:link{
+    text-decoration: none;
+}
+a p:hover{
+    color: red;
+    text-decoration: none;
+}
+.price strong:hover{
+    color: red;
+    text-decoration: none;
+}
+.price :hover{
+    color: red;
+    text-decoration: none;
+}
+
+
+.price strong{
+    font-size: 20px;
+    font-weight: bold;
+    color: #383838;
+    display: inline;
+}
+.price s{
+    font-size: 16px;
+    color: #555353;
+    display: inline;
+}
+.add{
+    display: flex;
+    justify-content: center;
+    margin-top: 10px;
+}
+.add button strong{
+    display: block;
+    text-align: center;
+    text-transform: uppercase;
+    line-height: 30px;
+    font-size: 16px;
+    font-weight: bold;
+    width: 140px;
+    background-color: rgba(255, 60, 0, 0.836);
+    color: white;
+    cursor: pointer;
+}
+.add button strong:hover{
+    background-color: rgb(255, 38, 0);
+}
+footer{
+    padding  : 10px 20px;
+    background-color: rgb(12, 1, 1);
+    color: lightyellow;
+    text-align: center;
+    margin-top: 50px;
+}
